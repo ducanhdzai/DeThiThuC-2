@@ -27,7 +27,7 @@ namespace TrangXinhGai
                 {
                     dt.Id = Convert.ToInt32(idTest);
                 }
-            } while (!Regex.IsMatch(idTest, @"^[0-9]+$") && idTest.Length != 5);
+            } while (!Regex.IsMatch(idTest, @"^[0-9]+$") || idTest.Length != 5);
             Console.WriteLine("Moi ban nhap ten dien thoai: ");
             dt.Ten = Console.ReadLine();
             Console.WriteLine("Moi ban nhap NSX dien thoai: ");
